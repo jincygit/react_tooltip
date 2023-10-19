@@ -1,0 +1,7 @@
+/* css for select Position Component*/
+
+.position-selector{
+    position:fixed;
+    top:110px;
+    left:43vw;
+}
