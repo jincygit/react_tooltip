@@ -23,7 +23,7 @@ class App extends React.Component {
     const { showToolTip } = this.state;
     let showToolTipStatus = showToolTip;
     //using 'type' to detect whether the event is mouseenter or mouseleave and assign value based on the event
-    if(type=="leave")
+    if(type === "leave")
     {
       showToolTipStatus = false; 
     }
@@ -32,8 +32,8 @@ class App extends React.Component {
     }
     // getting position from user
     let position = document.getElementById("positions").value;  
+    //console.log("showToolTip status on hover",showToolTipStatus,"  type ",type)
 
-    console.log("showToolTip status on hover",showToolTipStatus,"  type ",type)
     //by using setState changing tooltip status
     this.setState({
       showToolTip: !showToolTip,
